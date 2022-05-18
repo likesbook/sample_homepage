@@ -24,7 +24,7 @@ class Board extends React.Component {
 
           </Square>
           <Square onclick={() => { 
-            const arr = [...this.state.boardinfo]; 
+            const arr = [...this.state.boardinfo];
             arr[1]='maru'
             this.setState({ boardinfo:arr }) }}>
             {this.state.boardinfo[1] === 'maru' ? '丸' : ''}
